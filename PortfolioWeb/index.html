@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>loading...</title>
+	<link rel="stylesheet" type="text/css" href="styles2.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+		<div class= "loader-container">		
+			<div class="loader">
+				<span style="--i:1;">R</span>
+				<span style="--i:2;">A</span>
+				<span style="--i:3;">W</span>
+				<span style="--i:4;">R</span>
+			</div>
+			
+		
+			<div class="loading-container"><img src="images/tigerload.gif" style="position: relative; width:400px; margin: 0 auto; bottom: 230px; left: 5px" alt="load"></div>
+		
+			
+				<div class="loader1">
+				<span style="--i:1;">R</span>
+				<span style="--i:2;">A</span>
+				<span style="--i:3;">W</span>
+				<span style="--i:4;">R</span>
+			</div>
+	
+		</div>
+
+			<div class="test"> 
+			<a id="some-button" href="mainpage.html"><img src="images/gogo.png" style=" width: 250px; position: relative; margin: 0 auto; top: 0px;"  alt="go"></a></div>
+   			 <script>
+				 	document.getElementById("some-button").style.display = "none";
+				 
+				 	function showStuff() {
+            		document.getElementById("some-button").style.display = "inline";
+						}
+
+				 	function myFunction() {
+					window.location = "mainpage.html"
+						}
+
+        			setTimeout(showStuff, 5000);
+    </script>
+	
+</body>
+</html>

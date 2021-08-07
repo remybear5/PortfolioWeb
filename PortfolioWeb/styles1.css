@@ -1,0 +1,642 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'Flexo';
+    src: url('fonts/Flexo-Black.eot');
+    src: url('fonts/Flexo-Black.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Flexo-Black.woff') format('woff'),
+         url('fonts/Flexo-Black.ttf') format('truetype'),
+         url('fonts/Flexo-Black.svg#Flexo-Black') format('svg');
+    font-weight: 900;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Antipasto Pro';
+    src: url('fonts/AntipastoPro-Medium.eot');
+    src: url('fonts/AntipastoPro-Medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AntipastoPro-Medium.woff') format('woff'),
+         url('fonts/AntipastoPro-Medium.ttf') format('truetype'),
+         url('fonts/AntipastoPro-Medium.svg#AntipastoPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;  
+}	
+@font-face {
+    font-family: 'Antipasto';
+    src: url('fonts/Antipasto.eot');
+    src: url('fonts/Antipasto.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Antipasto.woff2') format('woff2'),
+        url('fonts/Antipasto.woff') format('woff'),
+        url('fonts/Antipasto.ttf') format('truetype'),
+        url('fonts/Antipasto.svg#Antipasto') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background-size:200px 200px; 
+	background-image:
+		linear-gradient(to right, #D9FCF9 3px, transparent 1px),
+		linear-gradient(to bottom, #D9FCF9 3px, transparent 1px);
+
+}
+.container2{
+	width: 1300px;
+	height: 500px;
+
+	margin: 0 auto;
+	position: relative;
+	top: 70px;
+}
+.intro-container{
+	width: 1000px;
+	margin: 0 auto; 
+	position: relative;
+	top: 100px;
+	
+	display: flex; 
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	
+}
+.speech-container{
+	margin-left: 30px;
+	width: 600px;
+	
+
+	
+}
+.centered{
+	width: 381px; 
+	height: 200px;
+	position: absolute;
+	top: 57px;
+	right: 115px;
+	font-family: 'Antipasto Pro';
+	display: inline-block;
+	color: #FF9433;
+	font-weight: 500;
+	font-size: 28px;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	
+	
+}
+.nav{
+	width: 100%;
+	height: 75px;
+	background-color: #3BD6E2; 
+	margin-top: 0;
+}
+.nav1{
+	width: 1430px;
+	height: 55px;
+	margin: 0 auto;
+	position: relative;
+	top: 9px;
+	display: flex; 
+	flex-flow: row wrap; 
+	justify-content: center; 
+	align-items: center;
+	
+	
+}
+.nav-button1{
+	font-family: 'Antipasto Pro';
+	font-size: 28px;
+	font-weight: 400;
+	list-style-type: none;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	padding: 6px 53px 8px 0;
+	margin: auto;
+}
+.nav-button1 a{
+	text-decoration: none;
+	color: white;
+}
+.nav-button1 a:hover{
+	opacity: 0.5;
+	transition: 0.3s;
+}
+.nav-button1 a:active{
+	opacity: 1;
+	transition: 0.3s;
+}
+.nav-button2{
+	list-style-type: none;
+	padding: 5px 0 830px 50px;
+	display: inline-block;
+	position: absolute;
+	left: 1350px;
+}
+
+
+/*.fixed{
+	position: relative;
+	left: 1420px;
+	
+	
+}*/
+.myimg{
+	opacity: 0.8;
+}
+.myimg:hover{
+	transform: rotate(-35deg);
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.myimg3:hover{
+	transform: rotate(20deg);
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.myimg2:hover{
+	transform: rotate(25deg);
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.loader{
+	width: 350px; 
+	height: 26px; 
+	position: relative;
+	top: 85px;
+	margin: 0 auto;
+}
+.loader span{
+	position: relative;
+	font-family: 'Antipasto Pro';
+	font-weight: 800;
+	color: #3BD6E2;
+	font-size: 30px;
+	display: inline-block;
+	text-transform: uppercase;
+	animation: animate 2.5s ease-in-out infinite;
+	animation-delay: calc(0.1s*var(--i))
+}
+@keyframes animate{
+	0%, 40%, 100%{
+		transform: translateY(0);
+	}
+	20%{
+		transform: translateY(-30px);
+	}
+}
+#story{
+	margin-top: 150px;
+	
+}
+.container3{
+	width: 100%;
+	height: 1600px;
+	margin: 0 auto ;
+	position: relative;
+	top: 80px;
+	display: flex; 
+	flex-flow: row wrap; 
+	justify-content: center; 
+	align-items: center;
+
+}
+.line{
+	width: 172px;
+	height: 6px;
+	background-color:#3BD6E2 ;
+	position: relative;
+
+}
+.ally-container{
+	width: 700px;
+	height: 900px;
+	margin: 0 auto;
+	position: relative;
+	top: 250px;
+}
+/*.sticky{
+	background: white;
+}
+.percentage{
+	position: absolute;
+	bottom: 10px; 
+	left: 10px;
+}
+#box{
+	 width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 5px solid lightgray;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}*/
+
+#showcase{
+	margin-top: 50px;
+	height: 2200px;
+}
+.container4{
+	width: 1000px;
+	height: 1273px;
+	margin: 0 auto;
+	position: relative;
+	top: 50px	
+}
+.container5{
+	width: 1014px;
+	height: 301px;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+	display: flex; 
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
+.container6{
+		
+	width: 1040px;
+	height: 610px;
+	position: relative; 
+	margin: 0 auto;
+	top: 300px;
+	left: 0px;
+	border-color: #38D6E2;
+	border-width: 5px;
+	border-style: solid;
+}
+.mySlides{
+	display: none;
+	width: 1030px;
+	height: 600px;
+	
+}
+.cursor{
+	cursor: pointer;
+}
+.prev, .next{
+	cursor: pointer;
+	position: absolute; 
+	top: 50%;
+	width: auto; 
+	padding: 16px;
+	margin-top: -50px;
+	color: white; 
+	font-weight: bold;
+	font-size:40px;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+  	-webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-family: 'Flexo'; 
+  font-size: 25px;
+  font-weight: 400;
+  padding: 20px 20px;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.container7{
+	pointer-events: none;
+}
+.overlay{
+	position: absolute; 
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity:0;
+	transition: .5s ease;
+	 background-color: rgba(0, 0, 0, 0.8);
+}
+.container8 img{
+	display: block;
+}
+.container8:hover .overlay{
+	opacity: 0.9
+}
+.text{
+	color: white; 
+	font-family: 'Antipasto';
+	position: absolute; 
+	top: 50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 1.2;
+}
+.text h3{
+	color: white;
+	font-family: 'Flexo';
+	font-size: 23px;
+}
+.container9{
+	width: 1040px;
+	height: 610px;
+	position: relative; 
+	margin: 0 auto;
+	top: 150px; 
+	left: -5px;
+	border-color: #38D6E2;
+	border-width: 5px;
+	border-style: solid;
+	
+}
+
+#contact{
+	margin-top: 100px;
+	
+	
+}
+.icon-container{
+	width: 1300px; 
+	margin: 0 auto;
+	position: relative;
+	top: 50px;
+	display: block;
+
+} 
+.container10{
+	background-image: url("images/phonecase.png");
+	background-position: center ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1303px;
+	width: 754px;
+	margin: 0 auto;
+	position: relative;
+	top: 0px;
+}
+.rawr{
+	font-family: 'Flexo';
+	font-size: 60px;
+	color: #ff9433;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	width: 441px;
+	top: 150px;
+}
+.container11{
+	width: 400px;
+	height: 252px;
+	position: relative;
+	margin: 0 auto;
+	top: 200px;
+}
+input[type=text], select, input[type=email]{
+	
+	width: 100%;
+	padding: 12px 24px 12px 24px;
+	border: none;
+	outline: none;
+	border-radius: 0;
+	box-sizing: border-box;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	resize: vertical;
+	opacity: 0.9;
+	font-family: 'Antipasto';
+	letter-spacing: 2px;
+	color: #ff9433;
+	font-size: 30px;
+	Font-weight: 500;
+	background-color: transparent;
+}
+textarea{
+	margin-top:15px;
+	width: 100%;
+	padding: 22px 24px 22px 24px;
+	border: none;
+	outline: none;
+	border-radius: 0px;
+	box-sizing: border-box;
+	resize: vertical;
+	opacity: 0.9;
+	background-color: transparent;
+	font-family: 'Antipasto';
+	letter-spacing: 2px;
+	color: #ff9433;
+	font-size: 30px;
+	Font-weight: 500;
+}
+.button{
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;	
+}
+
+
+.button:hover{
+	opacity: 0.5;
+}
+
+input::placeholder, textarea::placeholder{
+	font-family: 'Antipasto';
+	font-size: 30px;
+	color: #FF9433;
+	text-align: center;
+}
+.loader1{
+	width: 350px; 
+	height: 26px; 
+	position: relative;
+	top:415px;
+	margin: 0 auto;
+}
+.loader1 span{
+	position: relative;
+	font-family: 'Antipasto Pro';
+	font-weight: 800;
+	color: #3BD6E2;
+	font-size: 30px;
+	display: inline-block;
+	text-transform: uppercase;
+	animation: animate 2.5s ease-in-out infinite;
+	animation-delay: calc(0.1s*var(--i))
+}
+@keyframes animate{
+	0%, 40%, 100%{
+		transform: translateY(0);
+	}
+	20%{
+		transform: translateY(-30px);
+	}
+}
+.container12{
+	position: relative; 
+	top: 490px;
+	width: 472px;
+	height: 93px;
+	margin: 0 auto;	
+	display: flex; 
+	flex-flow: row wrap; 
+	justify-content: center; 
+	align-items: center;
+}
+.gallery{
+	padding: 0 30px 0 30px;
+}
+.gallery:hover{ 
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.gallery:active{
+	opacity: 1;
+	transition: 0.3s;
+	transform: scale(0.9);
+}
+#snackbar{
+	
+  	visibility: hidden; /* Hidden by default. Visible on click */
+  	min-width: 400px; /* Set a default minimum width */
+  	margin-left: -200px; /* Divide value of min-width by 2 */
+  	background-color: #333; /* Black background color */
+  	color: #fff; /* White text color */
+  	text-align: center; /* Centered text */
+  	border-radius: 3px; /* Rounded borders */
+  	padding: 16px; /* Padding */
+  	position: fixed; /* Sit on top of the screen */
+  	z-index: 1; /* Add a z-index if needed */
+  	left: 50%; /* Center the snackbar */
+  	bottom: 30px; /* 30px from the bottom */
+	font-family: 'Antipasto';
+	letter-spacing: 2px;
+	font-weight:500;
+}
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 0.8;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 0.8;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 0.8;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 0.8;}
+  to {bottom: 0; opacity: 0;}
+}
+.buttonbar{
+	position: relative;
+	width: 384px;
+	margin: 0 auto;
+	display: flex; 
+	flex-flow: row wrap; 
+	justify-content: center; 
+	align-items: center;
+	top: 560px;
+}
+.buttonbar img:hover{
+	opacity: 0.7;
+	transition: 0.3s;
+}
+.buttonbar img:active{
+	opacity: 1;
+	transition: 0.3s;
+	transform: scale(0.9);
+	
+}
+.letsgobaby{
+	font-family: 'Antipasto';
+	color: #38D6E2;
+	letter-spacing: 2px;
+	font-size: 25px;
+	font-weight:800;
+	text-align: center;
+	position: relative;
+	top: 630px;
+	display: inline-block;
+	width: 100%;
+	
+}
+.paw-container{
+	width: 500px;
+	height: 420px;
+	background-image: url("images/paw.png");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	/*background-color: greenyellow;*/
+	position: absolute;
+	z-index: 1;
+	top: 500px;
+	right: -80px;
+
+	
+}
+.paw-container:hover{
+	transform: rotate(-25deg);
+	
+	transition: 0.3s;
+}
+	
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs
+https://tympanus.net/Tutorials/CustomCursors/*/
